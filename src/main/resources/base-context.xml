@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="example.properties"/>
+    <context:annotation-config/>
+    <context:component-scan base-package="com.spring.example4"/>
+
+    <!--init-method="init"-->
+   <!-- <bean id="springBean"
+          class="com.spring.example4.SpringBean"
+          lazy-init="true"
+            scope="singleton">
+       <property name="name" value="${example.name}"/>
+       <property name="quantity" value="${example.quantity}"/>
+        &lt;!&ndash;<property name="anotherBean" ref="anotherBean"/>&ndash;&gt;
+       &lt;!&ndash; <constructor-arg name="name" value="${example.name}"/>
+        <constructor-arg  name="quantity" value="${example.quantity}"/>&ndash;&gt;
+    </bean>
+
+    <bean id="anotherBean" factory-bean="factory" factory-method="getInstance"/>
+    <bean id="factory" class="com.spring.example4.Factory"/>
+-->
+</beans>
+

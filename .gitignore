@@ -1,0 +1,9 @@
+#java specific
+*.class
+target/
+back-up/
+.classpath
+.project
+.settings/
+.DS_Store
+.springbeans
